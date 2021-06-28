@@ -1,0 +1,46 @@
+<div class="container">
+    <div>
+        <h2>Create New Account</h2>
+    </div>
+    <!-- <form> -->
+        <div class="form-group col-6">
+            <label for="fullName">Full Name</label>
+            <input type="text" [(ngModel)]="newAccount.fullName" class="form-control" id="fullName">
+        </div>
+        <br/>
+        <div class="form-group col-6">
+            <label for="address">Address</label>
+            <input type="text" [(ngModel)]="newAccount.address" class="form-control" id="address">
+        </div>
+        <br/>
+        <div class="form-group col-6">
+            <label for="idNumber">Id Number</label>
+            <input type="text" [(ngModel)]="newAccount.idNumber" class="form-control" id="idNumber">
+        </div>
+        <br/>
+        <div class="form-group col-6">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel"  [(ngModel)]="newAccount.phoneNumber" class="form-control" id="phoneNumber">
+        </div>
+        <br/>
+        <div class="form-group col-6">
+            <label for="emailAddress">Email address</label>
+            <input type="email" [(ngModel)]="newAccount.emailAddress" class="form-control" id="emailAddress">
+        </div>
+        <br/>
+        <div class="form-group col-6">
+            <label for="initialDeposit">Initial Deposit</label>
+            <input type="number"  [(ngModel)]="newAccount.initialDeposit" class="form-control" id="initialDeposit">
+        </div>
+        <br/>
+        <div class="form-group col-6">
+            <label for="accountType">Account Type</label>
+            <select class="form-control" id="accountType"  [(ngModel)]="newAccount.accountType">
+                <option>SAVINGS</option>
+                <option>CURRENT</option>
+              </select>
+        </div>
+        <br/>
+        <button class="btn btn-primary col-2 pull-right" (click)="createNewAccount()">Submit</button>
+    <!-- </form> -->
+</div>

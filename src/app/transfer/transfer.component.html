@@ -1,0 +1,28 @@
+<div class="container">
+    <div>
+        <h2>Transfer</h2>
+    </div>
+    <!-- <form> -->
+        <div class="form-group col-6">
+            <label for="source">Source Account Number</label>
+            <input type="text" [(ngModel)] = "transferObj.sourceAccount"  class="form-control" id="source">
+        </div>
+        <br/>
+        <div class="form-group col-6">
+            <label for="destination">Destination Account Number</label>
+            <input type="text" [(ngModel)] = "transferObj.destinationAccount" class="form-control" id="destination">
+        </div>
+        <br>
+        <div class="form-group col-6">
+            <label for="amount">Amount</label>
+            <input type="number" [(ngModel)] = "transferObj.amount" class="form-control" id="amount">
+        </div>
+        <br>
+        <div class="form-group col-6">
+            <label for="reason">Reason</label>
+            <input type="text" [(ngModel)] = "transferObj.reason" class="form-control" id="reason">
+        </div>
+        <br/>
+        <button class="btn btn-primary col-2 pull-right" (click)="transfer()">Submit</button>
+    <!-- </form> -->
+</div>

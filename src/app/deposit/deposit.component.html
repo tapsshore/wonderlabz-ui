@@ -1,0 +1,21 @@
+<div class="container">
+    <div>
+        <h2>Deposit</h2>
+    </div>
+    <!-- <form> -->
+        <div class="form-group col-6">
+            <label for="accountNumber">Account Number</label>
+            <input type="text" [(ngModel)] = "depositObj.accountNumber" class="form-control" id="accountNumber">
+        </div>
+        <br/>
+        
+        <div class="form-group col-6">
+            <label for="amount">Deposit Amount</label>
+            <input type="number" [(ngModel)] = "depositObj.amount" class="form-control" id="amount">
+        </div>
+    
+        <br/>
+        <button class="btn btn-primary col-2 pull-right" (click)="deposit()">Submit</button>
+    <!-- </form> -->
+</div>
+

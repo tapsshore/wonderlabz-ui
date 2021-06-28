@@ -1,0 +1,20 @@
+<div class="container">
+    <div>
+        <h2>Withdraw</h2>
+    </div>
+    <!-- <form> -->
+        <div class="form-group col-6">
+            <label for="accountNumber">Account Number</label>
+            <input type="text" [(ngModel)] = "withdrawObj.accountNumber" class="form-control" id="accountNumber">
+        </div>
+        <br/>
+        
+        <div class="form-group col-6">
+            <label for="amount">Amount</label>
+            <input type="number"  [(ngModel)] = "withdrawObj.amount" class="form-control" id="amount">
+        </div>
+    
+        <br/>
+        <button class="btn btn-primary col-2 pull-right" (click)="withdraw()">Submit</button>
+    <!-- </form> -->
+</div>
